@@ -8,7 +8,14 @@ export default {
         src: 'https://github.com/LeonardoSantos16.png',
         alt: 'Leonardo Mendes',
     },
-} as Meta<AvatarProps>
+    argTypes: {
+        src: {
+          control: {
+            type: 'text',
+          },
+        },
+      },
+    } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
 
